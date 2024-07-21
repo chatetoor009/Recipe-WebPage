@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  height: 100%;
+  width: 100vw;
+  overflow-x: none;
+  background-color: #e2e5e8;
+  background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+.navbar {
+  width: 100vw;
+  /* background-color: antiquewhite; */
+  /background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding: 15px;
+}
+nav {
+  width: 100%;
+  padding-right: 2rem;
+}
+#navlist {
+  width: 100%;
+  list-style-type: none;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  font-size: 2.5rem;
+  color: azure;
+}
+#navitems {
+  display: flex;
+  gap: 30px;
+}
+a {
+  text-decoration: none;
+  color: azure;
+}
+.footer {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  width: 100%;
+  text-align: center;
+  min-height: 40px;
+}
+.footer p {
+  font-size: 1.8rem;
+  color: azure;
+}
+.content {
+  width: 50%;
+  margin: auto;
+  /* border: 1px solid black; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 40px;
+  box-shadow: 0px 0px 30px black;
+}
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s 0.6s;
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 20px black;
+}
+.right:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+}
+.right img {
+  height: 200px;
+  border-radius: 15px;
+}
+.left {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.left h2 {
+  font-size: 2rem;
+}
+.ingridient {
+  font-size: 1.35rem;
+}
+.recipe {
+  font-size: 1.1rem;
+}
+.right .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36, 24, 24, 0.713);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 0.3s liner 0s;
+}
+.right .overlay span {
+  color: azure;
+  font-size: 1.2rem;
+}
+.right .overlay:hover {
+  opacity: 1;
+}
